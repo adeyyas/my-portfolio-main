@@ -1,0 +1,24 @@
+@import 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@100;200;300;400;500;600&display=swap';
+
+:root {
+  --font: 'Poppins';
+  --second-font: 'Inter';
+
+  --primary: 32, 215, 96;
+  --background: 247, 247, 247;
+  --dark: 13, 18, 22;
+  --color: 13, 18, 22;
+
+  --success: 90, 192, 143;
+  --danger: 250, 99, 34;
+  --warning: 250, 189, 34;
+  --info: 95, 150, 233;
+}
+
+$colors: (
+  'primary',
+  'success',
+  'danger',
+  'warning',
+  'info',
+  'dark')

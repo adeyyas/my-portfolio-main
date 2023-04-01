@@ -1,0 +1,108 @@
+form {
+  .group {
+    margin-bottom: 1rem;
+
+    .form-error {
+      font-size: .85rem;
+      margin-top: .5rem;
+      color: rgb(var(--danger))
+    }
+  }
+}
+
+%input-base {
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  font-family: var(--font);
+  z-index: 1;
+  position: relative;
+
+  &+& {
+    border-top-color: transparent;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid rgba(var(--primary), .5);
+    box-shadow: 0 0 0 4px rgba(var(--primary), .25);
+    z-index: 2
+  }
+
+  &.error {
+    outline: none;
+    border: 1px solid rgba(var(--danger), .5);
+    box-shadow: 0 0 0 4px rgba(var(--danger), .25);
+    z-index: 2
+  }
+}
+
+input {
+
+  &[type='text'],
+  &[type='password'] {
+    height: 40px;
+    @extend %input-base;
+  }
+}
+
+textarea {
+  @extend %input-base;
+  padding: 1rem;
+  min-height: 100px;
+}
+
+select {
+  @extend %input-base;
+  height: 40px;
+
+  &[multiple] {
+    height: 150px;
+
+    option {
+      padding: .5rem;
+    }
+  }
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  background-color: rgb(var(--primary));
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: .5s opacity ease;
+  padding: 0 2rem;
+  box-sizing: border-box;
+
+  &:hover {
+    opacity: .85;
+  }
+
+  &[disabled] {
+    opacity: .5;
+    cursor: not-allowed;
+  }
+
+  &.btn-table {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    &.btn-remove {
+      background-color: rgb(var(--danger));
+    }
+  }
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}

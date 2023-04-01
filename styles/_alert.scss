@@ -1,0 +1,34 @@
+@import 'variables';
+
+.alert {
+  width: 100%;
+  height: 40px;
+  color: rgb(var(--dark));
+  padding: 0 1rem;
+  font-size: .85rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  background-color: rgba(var(--dark), .1);
+  border: 1px solid rgba(var(--dark), .15);
+  box-sizing: border-box;
+
+  @each $color,
+  $text-color in $colors {
+    &.alert--#{$color} {
+      background-color: rgba(var(--#{$color}), .75);
+      border-color: rgba(var(--#{$color}), 1);
+      color: #fff;
+    }
+
+    &.alert--light {
+      &.alert--#{$color} {
+        background-color: rgba(var(--#{$color}), .15);
+        border-color: rgba(var(--#{$color}), .25);
+        color: rgb(var(--#{$color}));
+      }
+    }
+
+  }
+}
