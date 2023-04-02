@@ -119,7 +119,7 @@ footer {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      filter: grayscale(1);
+      filter: grayscale(0); //that's here image convert to grayscale
     }
   }
 
@@ -285,6 +285,11 @@ section {
     width: 100%;
   }
 }
+//buraya bakılacak
+about-page {
+  height: 70vh;
+} 
+
 
 .list-images {
   width: 100%;
