@@ -1,9 +1,9 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export const TITLE = 'Aziz Devrim YAYLA';
 
-export const URL = 'https://Adeyyas.co';
+export const URL = 'https://azizdevrimyayla.com';
 
-export const CDN_URL = 'https://Adeyyas.co';
+export const CDN_URL = 'https://azizdevrimyayla.com';
 
 export const SOCIAL_MEDIAS = [
   {
