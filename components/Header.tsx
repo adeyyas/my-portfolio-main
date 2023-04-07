@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const DEFAULT_PAGES = [
   { title: 'About', path: '/about', disabled: false },
-  { title: 'Posts', path: '/posts', disabled: false },
+  { title: 'Posts', path: '/posts', disabled: true },
   { title: 'Projects', path: '/projects', disabled: true },
 ]
 
